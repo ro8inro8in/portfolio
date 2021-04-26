@@ -36,7 +36,8 @@ const ProjectDescription = styled.span`
 
   @media (max-width: 768px) {
     width: 100%;
-    text-align: center;
+    font-size: 0.7em;
+    // text-align: center;
   }
 `;
 
@@ -94,9 +95,9 @@ const Projects = () => {
             </a>
             <p>
               NBRLY is a full-stack React web application that uses the Google
-              geolocation API and Firebase to store all our user data, NBRLY
+              geolocation API and Firebase to store all our user data. NBRLY
               will match you with other users in your area who have picked the
-              same activities as your self, NBRLY is an ongoing group project in
+              same activities as yourself. NBRLY is an ongoing group project in
               collaboration with developers Anna Balquin & Hal Fulcher.
             </p>
           </ProjectDescription>
@@ -108,7 +109,7 @@ const Projects = () => {
           </a>
           <ProjectDescription>
             <a href="https://nasa-search.vercel.app/" target="_blank" rel="noreferrer">
-              <Heading>NASA Search Engine</Heading>
+              <Heading>NASA Search</Heading>
             </a>
             <p>
               A search engine app for NASA's image library. The API endpoint was
@@ -135,7 +136,7 @@ const Projects = () => {
               <Heading>Weather App</Heading>
             </a>
             <p>
-              This is a React application using the Open Weather API, My app
+              This is a React application using the Open Weather API. My app
               will cover a 5 day forecast and retrieve all relevant information
               for each day such as wind direction, wind speed, humidity, minimum
               and the maximum temperature each represented with unique icons

@@ -5,7 +5,7 @@ const AboutContainer = styled.div`
    box-sizing: border-box;
    padding: 02em 20em;
     width: 100%;
-  
+
      margin: auto;
    display: flex;
     flex-direction: column;
@@ -17,8 +17,11 @@ const AboutContainer = styled.div`
 
 const AboutText = styled.div`
   margin: auto;
-  text-align: center;
+  // text-align: center;
   padding: 1em;
+  @media (max-width: 768px) {
+    font-size: 0.7em;
+  }
 `;
 
 const AboutHeading = styled.h2`
@@ -28,9 +31,7 @@ const AboutHeading = styled.h2`
   // padding-top: em;
   @media (max-width: 768px) {
     padding: 0.1em;
-    width: 100%;
-    
-    
+    width: 100%;  
   }
 `;
 const About = () => {
