@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import pixelme from "../images/pixelme.png";
-import nasaimg from "../images/nasaimg.png";
-import estateimg from "../images/estateimg.png";
-import nbrlyimg from "../images/nbrlyimg.png";
-import weatherapp from "../images/weatherapp.png";
+import nasamock from "../images/nasamock.png";
+import estatemock from "../images/estatemock.png";
+import nbrlymock from "../images/nbrlymock.png";
+import weathermock from "../images/weathermock.png";
 
 const AllProjectsContainer = styled.div`
   background-color: #fbd000;
@@ -14,13 +13,13 @@ const AllProjectsContainer = styled.div`
 `;
 
 const SingleJobContainer = styled.span`
-  // background-color: #43B047;
+  background-color: #FCDE4D;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: items;
   padding: 2em;
-
+  margin-bottom: 10px;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -28,9 +27,13 @@ const SingleJobContainer = styled.span`
 `;
 
 const ProjectDescription = styled.span`
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify_content: center;
+  justify-content: center;
+  color: black;
   width: 50%;
+  
   @media (max-width: 768px) {
     width: 100%;
     text-align: center;
@@ -47,10 +50,13 @@ const ProjectImg = styled.img`
 `;
 
 const ProjectHeading = styled.h2`
-  //  background-color: #43B047;
+  background-color: #43b047;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+  1px 1px 0 #000;
+  color: white;
   text-align: center;
   font-size: 2.5em;
-  // padding-top: em;
+  padding: 0.5em;
   @media (max-width: 768px) {
     padding: 0.1em;
   }
@@ -61,7 +67,7 @@ const Heading = styled.h3`
   text-decoration: underline;
   font-size: 2em;
   text-align: center;
-
+  
   @media (max-width: 768px) {
     font-size: 1.5em;
     padding: 0.1em;
@@ -74,7 +80,7 @@ const Projects = () => {
       <AllProjectsContainer>
         <ProjectHeading>PROJECTS</ProjectHeading>
         <SingleJobContainer>
-          <ProjectImg img src={nbrlyimg} alt="profile-photo" />
+          <ProjectImg img src={nbrlymock} alt="profile-photo" />
           <ProjectDescription>
             <Heading>NBRLY</Heading>
             <p>
@@ -102,7 +108,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <ProjectImg img src={nasaimg} alt="" />
+            <ProjectImg img src={nasamock} alt="" />
           </a>
           <ProjectDescription>
             <Heading>NASA Search Engine</Heading>
@@ -132,7 +138,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <ProjectImg img src={weatherapp} alt="profile-photo" />
+            <ProjectImg img src={weathermock} alt="profile-photo" />
           </a>
           <ProjectDescription>
             <Heading>Weather App</Heading>
@@ -168,7 +174,7 @@ const Projects = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <ProjectImg img src={estateimg} alt="" />
+            <ProjectImg img src={estatemock} alt="" />
           </a>
           <ProjectDescription>
             <Heading>Sureal Estate</Heading>
