@@ -44,7 +44,7 @@ return (
           graduate of Manchester Codes, an
           intensive six month course covering full stack web development. Below
           you'll find some examples of my work - please  
-          <a href="#Contacts"> contact me</a> if you would like to discuss any of my projects or would just like to talk about code!
+          get in touch if you would like to discuss any of my projects or would just like to talk about code!
         </h3>
       </AboutText>
     </AboutContainer>

@@ -13,7 +13,7 @@ const AllProjectsContainer = styled.div`
 `;
 
 const SingleJobContainer = styled.span`
-  background-color: #FCDE4D;
+  background-color: #fcde4d;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,7 +33,7 @@ const ProjectDescription = styled.span`
   justify-content: center;
   color: black;
   width: 50%;
-  
+
   @media (max-width: 768px) {
     width: 100%;
     text-align: center;
@@ -45,20 +45,25 @@ const ProjectImg = styled.img`
   margin-right: 3em;
   @media (max-width: 768px) {
     margin-right: 0;
-    width: 300px;
+    width: 400px;
+  }
+  @media (max-width: 468px) {
+    
+    width: 250px;
   }
 `;
 
 const ProjectHeading = styled.h2`
   background-color: #43b047;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-  1px 1px 0 #000;
+    1px 1px 0 #000;
   color: white;
   text-align: center;
   font-size: 2.5em;
   padding: 0.5em;
   @media (max-width: 768px) {
     padding: 0.1em;
+    font-size: 2em;
   }
 `;
 
@@ -67,7 +72,7 @@ const Heading = styled.h3`
   text-decoration: underline;
   font-size: 2em;
   text-align: center;
-  
+  padding-bottom: 20px;
   @media (max-width: 768px) {
     font-size: 1.5em;
     padding: 0.1em;
@@ -80,90 +85,61 @@ const Projects = () => {
       <AllProjectsContainer>
         <ProjectHeading>PROJECTS</ProjectHeading>
         <SingleJobContainer>
-          <ProjectImg img src={nbrlymock} alt="profile-photo" />
+          <a href="https://nbrly-app.herokuapp.com/" target="_blank" rel="">
+            <ProjectImg img src={nbrlymock} alt="profile-photo" />
+          </a>
           <ProjectDescription>
-            <Heading>NBRLY</Heading>
+            <a href="https://nbrly-app.herokuapp.com/" target="_blank" rel="">
+              <Heading>NBRLY</Heading>
+            </a>
             <p>
-              A full stack web app that connects you with the people around you.
-              By answering the simple question, "What do you want to do today?"
-              you are instantly linked with like-minded people in your
-              geographic vicinity for sports, nightlife, and everything in
-              between. Built with React and Firebase, in collaboration with
-              developers Hal Fulcher and Anna Balquin.
-              <a
-                href="https://github.com/ro8inro8in/nbrly"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click here
-              </a>
-              to view code.
+              NBRLY is a full-stack React web application that uses the Google
+              geolocation API and Firebase to store all our user data, NBRLY
+              will match you with other users in your area who have picked the
+              same activities as your self, NBRLY is an ongoing group project in
+              collaboration with developers Anna Balquin & Hal Fulcher.
             </p>
           </ProjectDescription>
         </SingleJobContainer>
 
         <SingleJobContainer>
-          <a
-            href="https://nasa-search.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://nasa-search.vercel.app/" target="_blank" rel="">
             <ProjectImg img src={nasamock} alt="" />
           </a>
           <ProjectDescription>
-            <Heading>NASA Search Engine</Heading>
+            <a href="https://nasa-search.vercel.app/" target="_blank" rel="">
+              <Heading>NASA Search Engine</Heading>
+            </a>
             <p>
-              A search engine app for NASA's image library API endpoint was
-              provided as part of the brief. User is able to search for and
-              return space-related images. Built with React.
-              <a href="https://nasa-search.vercel.app/" rel="noreferrer">
-                Click here
-              </a>
-              to view deployed app.
-              <a
-                href="https://github.com/ro8inro8in/Nasa-Tech-Test"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click here
-              </a>
-              to view code.
+              A search engine app for NASA's image library. The API endpoint was
+              provided as part of the brief. A User can search for and return
+              space-related images. Built with React.
             </p>
           </ProjectDescription>
         </SingleJobContainer>
 
         <SingleJobContainer>
           <a
-            href="https://halfulcher.github.io/weather-app/"
+            href="https://github.com/ro8inro8in/weather-app"
             target="_blank"
-            rel="noreferrer"
+            rel=""
           >
             <ProjectImg img src={weathermock} alt="profile-photo" />
           </a>
           <ProjectDescription>
-            <Heading>Weather App</Heading>
+            <a
+              href="https://github.com/ro8inro8in/weather-app"
+              target="_blank"
+              rel=""
+            >
+              <Heading>Weather App</Heading>
+            </a>
             <p>
               This is a React application using the Open Weather API, My app
               will cover a 5 day forecast and retrieve all relevant information
-              for each day such as: wind direction, speed, humidity, minimum and
-              maximum temperature each represented with unique icons depending
-              on the weather for each particular day
-              <a
-                href="https://halfulcher.github.io/weather-app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click here
-              </a>
-              to view deployed app.
-              <a
-                href="https://github.com/HalFulcher/weather-app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click here
-              </a>
-              to view code.
+              for each day such as wind direction, wind speed, humidity, minimum
+              and the maximum temperature each represented with unique icons
+              depending on the weather for each particular day
             </p>
           </ProjectDescription>
         </SingleJobContainer>
@@ -172,26 +148,24 @@ const Projects = () => {
           <a
             href="https://github.com/ro8inro8in/surreal-estate"
             target="_blank"
-            rel="noreferrer"
+            rel=""
           >
             <ProjectImg img src={estatemock} alt="" />
           </a>
           <ProjectDescription>
-            <Heading>Sureal Estate</Heading>
+            <a
+              href="https://github.com/ro8inro8in/surreal-estate"
+              target="_blank"
+              rel=""
+            >
+              <Heading>Surreal Estate</Heading>
+            </a>
             <p>
-              A mock property website designed using React. Users can view the
-              current property listings and filter them by city or price, as
-              well as add their own properties to sell. The properties are added
-              and retrieved from a separately deployed Heroku database. You can
-              view a deployed version of the project
-              <a
-                href="https://github.com/ro8inro8in/surreal-estate"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click here
-              </a>
-              to view code.
+              Surreal Estate is a mock property website designed using React.
+              You can list and delete properties as well as sort by location and
+              prices. This project focuses on functionality over style. If I had
+              more time to complete this project I would have focused on styling
+              also.
             </p>
           </ProjectDescription>
         </SingleJobContainer>
