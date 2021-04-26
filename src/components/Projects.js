@@ -85,11 +85,11 @@ const Projects = () => {
       <AllProjectsContainer>
         <ProjectHeading>PROJECTS</ProjectHeading>
         <SingleJobContainer>
-          <a href="https://nbrly-app.herokuapp.com/" target="_blank" rel="">
+          <a href="https://nbrly-app.herokuapp.com/" target="_blank" rel="noreferrer">
             <ProjectImg img src={nbrlymock} alt="profile-photo" />
           </a>
           <ProjectDescription>
-            <a href="https://nbrly-app.herokuapp.com/" target="_blank" rel="">
+            <a href="https://nbrly-app.herokuapp.com/" target="_blank" rel="noreferrer">
               <Heading>NBRLY</Heading>
             </a>
             <p>
@@ -103,11 +103,11 @@ const Projects = () => {
         </SingleJobContainer>
 
         <SingleJobContainer>
-          <a href="https://nasa-search.vercel.app/" target="_blank" rel="">
+          <a href="https://nasa-search.vercel.app/" target="_blank" rel="noreferrer">
             <ProjectImg img src={nasamock} alt="" />
           </a>
           <ProjectDescription>
-            <a href="https://nasa-search.vercel.app/" target="_blank" rel="">
+            <a href="https://nasa-search.vercel.app/" target="_blank" rel="noreferrer">
               <Heading>NASA Search Engine</Heading>
             </a>
             <p>
@@ -122,7 +122,7 @@ const Projects = () => {
           <a
             href="https://github.com/ro8inro8in/weather-app"
             target="_blank"
-            rel=""
+            rel="noreferrer"
           >
             <ProjectImg img src={weathermock} alt="profile-photo" />
           </a>
@@ -130,7 +130,7 @@ const Projects = () => {
             <a
               href="https://github.com/ro8inro8in/weather-app"
               target="_blank"
-              rel=""
+              rel="noreferrer"
             >
               <Heading>Weather App</Heading>
             </a>
@@ -148,7 +148,7 @@ const Projects = () => {
           <a
             href="https://github.com/ro8inro8in/surreal-estate"
             target="_blank"
-            rel=""
+            rel="noreferrer"
           >
             <ProjectImg img src={estatemock} alt="" />
           </a>
@@ -156,7 +156,7 @@ const Projects = () => {
             <a
               href="https://github.com/ro8inro8in/surreal-estate"
               target="_blank"
-              rel=""
+              rel="noreferrer"
             >
               <Heading>Surreal Estate</Heading>
             </a>
