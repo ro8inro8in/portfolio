@@ -44,7 +44,7 @@ const SidebarMenu = styled.ul`
   }
 `;
 
-const SidebarLink = styled.li`
+const NavLink = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +57,7 @@ const SidebarLink = styled.li`
     font-weight: bold;
     cursor: pointer
     &:hover{
-        color: #CFCFCF;
+        color: black;
         transition: 0.2s ease-in-out;
     }
 `;
@@ -72,13 +72,13 @@ const SideBar = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SidebarLink to="/#Header">About</SidebarLink>
+            <NavLink href="/#">About</NavLink>
           </SidebarMenu>
           <SidebarMenu>
-            <SidebarLink to="/#Projects">Projects</SidebarLink>
+            <NavLink href="/#Projects">Projects</NavLink>
           </SidebarMenu>
           <SidebarMenu>
-            <SidebarLink to="/#Contact">Contact</SidebarLink>
+            <NavLink href="/#Contact">Contact</NavLink>
           </SidebarMenu>
         </SidebarWrapper>
       </SidebarContainer>

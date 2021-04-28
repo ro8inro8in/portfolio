@@ -82,13 +82,13 @@ const Navbar = ({toggle}) => {
         </MobileIcon>
         <NavContainer>
           <NavItem>
-          <NavLink href="#Header">
+          <NavLink href="/#">
             About
           </NavLink>
-          <NavLink href="#Projects">
+          <NavLink href="/#Projects">
             Projects
           </NavLink>
-          <NavLink href="#Contact">
+          <NavLink href="/#Contact">
             Contact
           </NavLink>
           </NavItem>
