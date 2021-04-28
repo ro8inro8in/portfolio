@@ -1,3 +1,4 @@
+// import { withRouter } from "react-router";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 
@@ -72,11 +73,11 @@ const NavLink = styled.a`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
-        <MobileIcon>
+        <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
         <NavContainer>
