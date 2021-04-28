@@ -121,7 +121,7 @@ const Projects = () => {
 
         <SingleJobContainer>
           <a
-            href="https://github.com/ro8inro8in/weather-app"
+            href="https://forecast-app-six.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -129,7 +129,7 @@ const Projects = () => {
           </a>
           <ProjectDescription>
             <a
-              href="https://github.com/ro8inro8in/weather-app"
+              href="https://forecast-app-six.vercel.app/"
               target="_blank"
               rel="noreferrer"
             >
