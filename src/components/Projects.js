@@ -98,7 +98,9 @@ const Projects = () => {
               geolocation API and Firebase to store all our user data. NBRLY
               will match you with other users in your area who have picked the
               same activities as yourself. NBRLY is an ongoing group project in
-              collaboration with developers Anna Balquin & Hal Fulcher.
+              collaboration with developers Anna Balquin & Hal Fulcher. NBRLY
+              is deployed using Heroku, Heroku likes to goto sleep when it is not in use 
+              and may take a while to load to your browser. 
             </p>
           </ProjectDescription>
         </SingleJobContainer>
@@ -114,7 +116,7 @@ const Projects = () => {
             <p>
               A search engine app for NASA's image library. The API endpoint was
               provided as part of the brief. A User can search for and return
-              space-related images. Built with React.
+              space-related images. Built with React and deployed with Vercel.
             </p>
           </ProjectDescription>
         </SingleJobContainer>
@@ -166,7 +168,7 @@ const Projects = () => {
               You can list and delete properties as well as sort by location and
               prices. This project focuses on functionality over style. If I had
               more time to complete this project I would have focused on styling
-              also.
+              also. 
             </p>
           </ProjectDescription>
         </SingleJobContainer>
